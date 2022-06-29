@@ -8,7 +8,7 @@ if (dia == "lunes") {
     alert ("Bien, déjanos tus datos.");
 
 // Usando constructor
-let array = [];
+let cuestionario = [];
 
 let nombre = prompt ("¿Cómo te llamas?");
 let edad = prompt ("¿Qué edad tienes?");
@@ -25,8 +25,8 @@ function Cliente (nombre, edad, numero, experiencia, ninos) {
 };
 
 const cliente1 = new Cliente (nombre, edad, numero, experiencia, ninos);
-array.push(cliente1);
-console.log(array);
+cuestionario.push(cliente1);
+console.log(cuestionario);
 
 // Usando ciclo
 while (numero > 8) {
