@@ -46,7 +46,7 @@ while (numero > 8) {
 
 let precioPaquete = paquetes.find(elemento => elemento.Nombre === paquete);
 let precio = 100;
-let result = numero * precio + precioPaquete;
+let result = numero * precio + precioPaquete.Precio;
 
 alert ("El total de tu reserva es " + result);
 
