@@ -6,50 +6,17 @@ const paquetes = [
     { Nombre: "4", Descripción: "Guía, tabla, paddle, chaleco, cámara y drone", Precio: 500 },
 ];
 
+// Usando constructor
+let nombre = document.getElementById("nombre");
+let edad = document.getElementById("edad");
+let numero = document.getElementById("numero");
+let experiencia = document.getElementById("experiencia");
+let ninos = document.getElementById("ninos");
+let paquete = document.getElementById("paquete");
 
-
-
-
-/* // Iniciar sesión
-let usuario 
-let usuarioEnLS = (localStorage.getItem("usuario"));
-console.log(usuario);
-
-let button = document.getElementById("btnIngresar")
-    button.onclick = () => {alert ("Bienvenido")}
-
-// Recuperar sesión
-
-if (usuarioEnLS) {
-    usuario = usuarioEnLS;
-    alert ("Bienvenido " + usuario);
-} else {
-    usuario = document.getElementById ("usuario", usuario.value);
-    localStorage.setItem("usuario", usuario);
-    let button = document.getElementById("btnIngresar")
-    button.onclick = () => {alert ("Bienvenido")} */
-
-
-
-
-
-
-let formulario = document.getElementById("formulario");
-formulario.addEventListener("submit", validarFormulario);
-
-function validarFormulario(e) {
-    e.preventDefault();
-    let formulario = e.target
+const registrarCliente = () => {
 
     let cuestionario = []
-
-    // Usando constructor
-    let nombre = document.getElementById("nombre");
-    let edad = document.getElementById("edad");
-    let numero = document.getElementById("numero");
-    let experiencia = document.getElementById("experiencia");
-    let ninos = document.getElementById("ninos");
-    let paquete = document.getElementById("paquete");
 
     function Cliente(nombre, edad, numero, experiencia, ninos, paquete) {
         this.nombre = nombre
@@ -62,29 +29,53 @@ function validarFormulario(e) {
 
     const cliente1 = new Cliente(nombre.value, edad.value, numero.value, experiencia.value, ninos.value, paquete.value);
     cuestionario.push(cliente1);
-    console.log(cuestionario);
+    console.log(cliente1);
 
-    // Usando funcion de orden superior
+    localStorage.setItem("cuestionario", JSON.stringify(cuestionario));
+};
+
+const totalReserva = () => {
+
     let precioPaquete = paquetes.find(elemento => elemento.Nombre === paquete.value);
     console.log(precioPaquete);
     let precio = 100;
     let result = numero.value * precio + precioPaquete.Precio;
 
-    const totalReserva = () => {
-        contenedor.innerHTML = `<div>
+    localStorage.setItem("result", result);
+
+    contenedor.innerHTML = `<div>
                                 <p>¡Hola ${nombre.value}!
                                 El total de tu reserva es de ${result}.</p>
                             </div>`
-    };
+};
 
-    const validarCampos = () => {
-        let validacion = (nombre.value == "" || edad.value == "" || numero.value == "" || experiencia.value == "" || ninos.value == "" || paquete.value == "") ? false : true;
-        return validacion
-    };
+const validarCampos = () => {
+    let validacion = (nombre.value == "" || edad.value == "" || numero.value == "" || experiencia.value == "" || ninos.value == "" || paquete.value == "") ? false : true;
+    return validacion
+};
 
-    let button = document.getElementById("btnPrincipal")
-    button.onclick = () => {
-        validarCampos() ? totalReserva() : alert("Debe completar todos los campos");
-    };
+let button = document.getElementById("btnPrincipal")
+button.onclick = (e) => {
+    e.preventDefault();
+    validarCampos() ? totalReserva() : swal("¡Debe completar todos los campos!");
+    registrarCliente()
+};
 
+let misReservas = () => {
+    let reservasPasadas = JSON.parse(localStorage.getItem("cuestionario"));
+    let resultPasado = localStorage.getItem("result");
+    for (const elemento of reservasPasadas) {
+
+
+        contenedor2.innerHTML = `<div>
+                                <p>${elemento.nombre}
+                                    ${resultPasado}</p>
+                            </div>`
+
+    }
 }
+
+let button2 = document.getElementById("btnSecundario")
+button2.onclick = () => {
+    misReservas()
+};
