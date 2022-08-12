@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Proyecto JavaScript</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>San Luis Stand-Up Paddle</h1>
+
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Paquetes</li>
+                <li>Información</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="paquete">
+        <div class="paquete_1">
+            <h2>Paquete 1</h2>
+            <ul>
+                <li>Guía</li>
+                <li>Tabla</li>
+                <li>Paddle</li>
+            </ul>
+        </div>
+        <div class="paquete_2">
+            <h2>Paquete 2</h2>
+            <ul>
+                <li>Guía</li>
+                <li>Tabla</li>
+                <li>Paddle</li>
+                <li>Chaleco</li>
+            </ul>
+        </div>
+        <div class="paquete_3">
+            <h2>Paquete 3</h2>
+            <ul>
+                <li>Guía</li>
+                <li>Tabla</li>
+                <li>Paddle</li>
+                <li>Chaleco</li>
+                <li>Cámara</li>
+            </ul>
+        </div>
+        <div class="paquete_4">
+            <h2>Paquete 4</h2>
+            <ul>
+                <li>Guía</li>
+                <li>Tabla</li>
+                <li>Paddle</li>
+                <li>Chaleco</li>
+                <li>Cámara</li>
+                <li>Drone</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div id="calendario">
+
+        </div>
+
+        <div>
+            <h2>Reserva tu paseo aquí:</h2>
+
+            <form id="formulario">
+                <ul>
+                    <li>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" placeholder="Nombre">
+                    </li>
+                    <li>
+                        <label for="edad">Edad</label>
+                        <input id="edad" type="number" placeholder="Edad">
+                    </li>
+                    <li>
+                        <label for="numero">No de personas</label>
+                        <input id="numero" type="number" placeholder="No de personas">
+                    </li>
+                    <li>
+                        <label for="paquete">¿Que paquete escojes?</label>
+                        <select id="paquete" name="¿Que paquete escojes?" required>
+                            <option value="">Selecciona tu paquete</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </li>
+                </ul>
+                <button id="btnPrincipal" type="submit" value="submit">Ingresar</button>
+            </form>
+        </div>
+
+        <div id="contenedor">
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="contenedor2">
+            <button id="btnSecundario" type="submit" value="submit">Ver mis reservas</button>
+        </div>
+
+
+        <ul class="redes">
+            <li>
+                <img src="assets/email.png" alt="E-mail">
+            </li>
+            <li>
+                <img src="assets/whatsapp.png" alt="WhastApp">
+            </li>
+            <li>
+                <img src="assets/facebook.png" alt="Facebook">
+            </li>
+            <li>
+                <img src="assets/instagram.png" alt="Instagram">
+            </li>
+            <li>
+                <img src="assets/twitter.png" alt="Twitter">
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
