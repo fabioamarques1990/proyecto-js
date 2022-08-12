@@ -1,3 +1,27 @@
+let clima = document.getElementById("clima");
+
+const getClima = async () => {
+    let response = await axios("clima.JSON");
+    let data = response.data.DailyForecasts;
+
+    console.log(response);
+
+    data.forEach(element => {
+        const item = document.createElement("div");
+
+        item.innerHTML = `<div class="clima">
+            <h3> ${element.Date} </h3>
+            <p> Minima: ${element.Temperature.Minimum.Value} ${element.Temperature.Minimum.Unit} </p>
+            <p> Máxima: ${element.Temperature.Maximum.Value} ${element.Temperature.Maximum.Unit} </p>
+            </div>
+        `;
+
+        clima.append(item);
+    });
+}
+
+getClima();
+
 // paquetes
 const paquetes = [
     { Nombre: "1", Descripción: "Guía, tabla y paddle", Precio: 150 },
@@ -11,19 +35,21 @@ let nombre = document.getElementById("nombre");
 let edad = document.getElementById("edad");
 let numero = document.getElementById("numero");
 let paquete = document.getElementById("paquete");
+let fecha = document.getElementById("fecha");
+
+let cuestionario = []
 
 const registrarCliente = () => {
 
-    let cuestionario = []
-
-    function Cliente(nombre, edad, numero, paquete) {
+    function Cliente(nombre, edad, numero, paquete, fecha) {
         this.nombre = nombre
         this.edad = edad
         this.numero = numero
         this.paquete = paquete
+        this.fecha = fecha
     };
 
-    const cliente1 = new Cliente(nombre.value, edad.value, numero.value, paquete.value);
+    const cliente1 = new Cliente(nombre.value, edad.value, numero.value, paquete.value, fecha.value);
     cuestionario.push(cliente1);
     console.log(cliente1);
 
@@ -39,14 +65,14 @@ const totalReserva = () => {
 
     localStorage.setItem("result", result);
 
-    contenedor.innerHTML = `<div>
-                                <p>¡Hola ${nombre.value}!
-                                El total de tu reserva es de ${result}.</p>
+    contenedor.innerHTML += `<div class="reservas">
+                                <h3>¡Hola ${nombre.value}!</h3>
+                                <p>El total de tu reserva es de $${result}, en el día ${fecha.value}.</p>
                             </div>`
 };
 
 const validarCampos = () => {
-    let validacion = (nombre.value == "" || edad.value == "" || numero.value == "" || paquete.value == "") ? false : true;
+    let validacion = (nombre.value == "" || edad.value == "" || numero.value == "" || paquete.value == "" || fecha.value == "") ? false : true;
     return validacion
 };
 

@@ -1,0 +1,188 @@
+{
+    "Headline": {
+      "EffectiveDate": "2022-08-12T13:30:00-04:00",
+      "EffectiveEpochDate": 1660325400,
+      "Severity": 5,
+      "Text": "A thunderstorm this afternoon",
+      "Category": "thunderstorm",
+      "EndDate": "2022-08-12T19:30:00-04:00",
+      "EndEpochDate": 1660347000,
+      "MobileLink": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?lang=en-us",
+      "Link": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?lang=en-us"
+    },
+    "DailyForecasts": [
+      {
+        "Date": "26-08-2022",
+        "EpochDate": 1660302000,
+        "Temperature": {
+          "Minimum": {
+            "Value": 20,
+            "Unit": "C",
+            "UnitType": 18
+          },
+          "Maximum": {
+            "Value": 32,
+            "Unit": "C",
+            "UnitType": 18
+          }
+        },
+        "Day": {
+          "Icon": 17,
+          "IconPhrase": "Partly sunny w/ t-storms",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Night": {
+          "Icon": 42,
+          "IconPhrase": "Mostly cloudy w/ t-storms",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Moderate"
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?day=1&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?day=1&lang=en-us"
+      },
+      {
+        "Date": "27-08-2022",
+        "EpochDate": 1660388400,
+        "Temperature": {
+          "Minimum": {
+            "Value": 18,
+            "Unit": "C",
+            "UnitType": 18
+          },
+          "Maximum": {
+            "Value": 30,
+            "Unit": "C",
+            "UnitType": 18
+          }
+        },
+        "Day": {
+          "Icon": 17,
+          "IconPhrase": "Partly sunny w/ t-storms",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Night": {
+          "Icon": 42,
+          "IconPhrase": "Mostly cloudy w/ t-storms",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?day=2&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?day=2&lang=en-us"
+      },
+      {
+        "Date": "28-08-2022",
+        "EpochDate": 1660474800,
+        "Temperature": {
+          "Minimum": {
+            "Value": 19,
+            "Unit": "C",
+            "UnitType": 18
+          },
+          "Maximum": {
+            "Value": 29,
+            "Unit": "C",
+            "UnitType": 18
+          }
+        },
+        "Day": {
+          "Icon": 16,
+          "IconPhrase": "Mostly cloudy w/ t-storms",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Night": {
+          "Icon": 36,
+          "IconPhrase": "Intermittent clouds",
+          "HasPrecipitation": false
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?day=3&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?day=3&lang=en-us"
+      },
+      {
+        "Date": "29-08-2022",
+        "EpochDate": 1660561200,
+        "Temperature": {
+          "Minimum": {
+            "Value": 22,
+            "Unit": "C",
+            "UnitType": 18
+          },
+          "Maximum": {
+            "Value": 32,
+            "Unit": "C",
+            "UnitType": 18
+          }
+        },
+        "Day": {
+          "Icon": 6,
+          "IconPhrase": "Mostly cloudy",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Moderate"
+        },
+        "Night": {
+          "Icon": 35,
+          "IconPhrase": "Partly cloudy",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?day=4&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?day=4&lang=en-us"
+      },
+      {
+        "Date": "30-08-2022",
+        "EpochDate": 1660647600,
+        "Temperature": {
+          "Minimum": {
+            "Value": 18,
+            "Unit": "C",
+            "UnitType": 18
+          },
+          "Maximum": {
+            "Value": 30,
+            "Unit": "C",
+            "UnitType": 18
+          }
+        },
+        "Day": {
+          "Icon": 3,
+          "IconPhrase": "Partly sunny",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Night": {
+          "Icon": 35,
+          "IconPhrase": "Partly cloudy",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?day=5&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ve/queretaro/1231040/daily-weather-forecast/1231040?day=5&lang=en-us"
+      }
+    ]
+  }
