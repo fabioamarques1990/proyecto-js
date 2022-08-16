@@ -80,7 +80,7 @@ nav ul li {
     display: flex;
     list-style: none;
     justify-content: center;
-    margin-top: 75px;
+    margin-top: 200px;
 }
 .redes li {
     padding: 0 20px;
@@ -95,6 +95,10 @@ footer h2 {
     font-size: 35px;
     margin-top: 75px;
     margin-left: 75px;
+}
+
+footer {
+    margin-top: 250px;
 }
 
 footer form {
@@ -165,4 +169,29 @@ footer form button {
     display: flex;
     justify-content: space-around;
     margin: 25px;
+}
+
+#contenedor2 {
+    display: flex;
+    justify-content: center;
+    margin: 75px;
+}
+
+#contenedor2 button {
+    border-radius: 50px;
+    height: 125px;
+    width: 125px;
+    background-color: darkseagreen;
+    justify-content: center;
+}
+
+.reservas_pasadas {
+    background-color: antiquewhite;
+    height: 175px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

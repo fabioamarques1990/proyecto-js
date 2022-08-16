@@ -89,9 +89,11 @@ let misReservas = () => {
     for (const elemento of reservasPasadas) {
 
 
-        contenedor2.innerHTML = `<div>
-                                <p>${elemento.nombre}
-                                    ${resultPasado}</p>
+        contenedor2.innerHTML = `<div class="reservas_pasadas">
+                                <h3>¡Hola ${elemento.nombre}!</h3>
+                                <p>Te recordamos que tu reserva es de $${resultPasado},
+                                para la fecha: ${elemento.fecha}.
+                                Aquí te esperamos.</p>
                             </div>`
 
     }
